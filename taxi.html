@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Valley Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Pushster&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header" style="background-image:url(images/taxi/taxi.jpg);">
+        <nav>
+            <a href="index.html"><image src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="about1">
+    
+        <div class="main1">
+            <div class="container">
+                <img src="images/taxi/MMV.png" alt="Avatar" class="image" style="width:100%">
+            </div>
+            <div class="text1">
+                <h4><i class="fa fa-map-marker"></i>Taxi</h4>
+                <h2>Pradeep Taxi Services</h2>
+                <p>
+                    MMV Taxi service is providing the opportunity for our clients to book efficiently taxi at any instant of time. You will be provided with service of pick and drop. MMV highly appreciate the  customer satisfaction. You can book it at anywhere of Kullu-Manali. Contact for your query. 
+                </p>
+                    <h4><b>Rating:</b>
+                    <i class="fa fa-star" style=" color:orange;"></i>
+                    <i class="fa fa-star" style=" color:orange;"></i>
+                    <i class="fa fa-star" style=" color:orange;"></i>
+                    <i class="fa fa-star" style=" color:orange;"></i>
+                    <i class="fa fa-star-half-o" style=" color:orange;"></i>
+                    </h4>
+                    <h4><b>Contact:</b> +91 87847858</h4>
+                    <div class="inputbox">
+                      <a href="tel:+919816797667"><input type="submit" value="Call Now"></a>
+                       <span></span>
+                    </div>
+            
+            </div>
+        </div>
+    </section> 
+    <section class="about1">
+    <!------------serivices--------->
+ 
+</body>
+<footer>
+    <div class="cont">
+        <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>My Magic Valley Tour tries to provides the best experience for worthwhile adventure at Kullu-Manali. You can book your taxi to reach us.Our customer's satisfation means to us .
+            </p>
+            <ul class="sci">
+                <li><a href="https://www.instagram.com/magicmalana/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=BydtWQ-N_lE&t=2s"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://www.facebook.com/magicmalana/"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    <div class="sec quicklink">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    </div>
+    <div class="sec contact1">
+        <h2>Contact Info</h2>
+        <ul class="info">
+            <li>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span>Malana Magic Valley Trek (magic malana)<br>
+                    Waichin,Malana Kullu(H.P)</span>
+            </li>
+            <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p><a href="tel:918894407500">+91 889 440 7500</a><br>
+                    <a href="tel:919418543007">+91 941 854 3007</a></p>>
+            </li>
+            <li>
+                <span><i class="fa fa-envelope"></i></span>
+                <p><a href="mailto:magicmalana@gmail.com">magicmalana@gmail.com</a></p>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+</footer>
+
+    <!----javascript---->
+    <script>
+        var navlinks= document.getElementById("navlinks");
+        function showmenu()
+        {
+            navlinks.style.right="0";
+        }
+        function hidemenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxTi5r0BR_VmIP7Gpx-wVGdmaR0b_Hj82h4F3CbV9OBdmAoBe9qUSzXRaqdo4yYabVyVg/exec'
+        const form = document.forms['contactform']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            document.getElementById("register").reset()
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
